@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Josefin+Sans:wght@600&family=Poppins&family=Righteous&family=Titillium+Web:wght@300;700&display=swap");
+/* Reset our CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* CSS Variables */
+/* :root {
+  --navbar-height: 59px;
+} */
+/* Navigation bar  */
+#navbar {
+  display: flex;
+}
+
+/* logo and image  */
+
+.logo img {
+  height: 60px;
+  margin: 0 6px 2px 16px;
+}
+/* List Styling  */
+#navbar ul {
+  display: flex;
+}
+#navbar::before {
+  content: "";
+  background: black;
+  position: absolute;
+  height: 7%;
+  width: 100%;
+  z-index: -1;
+  opacity: 5;
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1 rem;
+}
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 10px 20px;
+  margin-top: 7px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-family: "Itim", cursive;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+/* home section  */
+#homebar {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  padding: 3px 200px;
+  justify-content: center;
+  align-items: center;
+}
+#homebar::before {
+  content: "";
+  background: url(back.png) no-repeat center center/cover;
+  position: absolute;
+  height: 80%;
+  width: 100vw;
+  z-index: -1;
+  opacity: 0.9;
+}
+#homebar .heading-primary {
+  color: white;
+  -webkit-text-stroke: yellow;
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Itim", cursive;
+}
+#homebar p {
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+  font-family: "Itim", cursive;
+  padding: 10px 150px;
+}
+.btn {
+  padding: 5px 20px;
+  margin-top: 10px;
+  border: 1.5px solid white;
+  background-color: green;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  font-family: "Itim", cursive;
+}
+.btn:hover {
+  background-color: rgb(0, 71, 0);
+  color: white;
+  cursor: pointer;
+}
+/* services  */
+.heading2 {
+  font-size: 3rem;
+  padding: 10px;
+  text-align: center;
+  margin-top: 130px;
+  font-family: "Itim", cursive;
+}
+
+#services {
+  margin: 35px;
+  display: flex;
+}
+#services .box {
+  border: 2px solid green;
+  padding: 35px;
+  margin: 2px 10px;
+  border-radius: 20px;
+  background-color: rgba(59, 145, 59, 0.575);
+  font-family: "Itim", cursive;
+  text-align: center;
+}
+#services .box img {
+  height: 130px;
+  align-items: center;
+}
+#our-clients .Clients {
+  font-size: 3rem;
+  padding: 5px;
+  text-align: center;
+  margin-top: 5px;
+  font-family: "Itim", cursive;
+}
+#navbar::before {
+  content: "";
+  background: url(clients.jpg) no-repeat center center/cover;
+  position: absolute;
+  height: 40%;
+  width: 100vw;
+  z-index: -1;
+  opacity: 0.89;
+  margin-top: 1080px;
+}
+#customers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+#customers .logo {
+  height: 100px;
+  padding: 3px 50px;
+}
+#contact .Contact-us {
+  font-size: 3rem;
+  padding: 5px;
+  text-align: center;
+  margin-top: 120px;
+  font-family: "Itim", cursive;
+}
+#contact::before {
+  content: "";
+  background: url(message-background.jpg) no-repeat center center/cover;
+  position: absolute;
+  height: 45%;
+  width: 100vw;
+  z-index: -1;
+  opacity: 0.89;
+  margin-top: 110px;
+}
+.feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-family: "Itim", cursive;
+}
+.form-element {
+  padding-bottom: 10px;
+}
+#name {
+  padding: 3px 5px;
+  border-radius: 3px;
+  border-style: none;
+}
+#message {
+  border-radius: 3px;
+  border-style: none;
+}
